@@ -1,0 +1,501 @@
+body {
+  /* display: inline; */
+  background-color: black;
+  /* min-height: 100vh;*/
+
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+  .sidebar {
+    overflow: hidden;
+    background-color: darkseagreen;
+  }
+
+  .sidebar a {
+    float: left;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  .sidebar a.icon {
+    float: left;
+    display: block;
+    color: black;
+  }
+  .sidebar.responsive {
+    position: relative;
+  }
+  .sidebar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .sidebar {
+    overflow: hidden;
+    background-color: darkseagreen;
+  }
+
+  .sidebar a {
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: sticky;
+  }
+
+  .sidebar a {
+    display: none;
+  }
+  .sidebar a.icon {
+    float: left;
+    display: block;
+    color: black;
+  }
+  .sidebar.responsive {
+    position: relative;
+  }
+  .sidebar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    overflow: hidden;
+    color: black;
+  }
+  .sidebar a {
+    position: fixed;
+    left: -100px;
+    transition: 0.1s;
+    font-size: 20px;
+    float: left;
+    text-align: left;
+    width: 110px;
+    color: whitesmoke;
+
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 0 5px 5px;
+  }
+
+  #home {
+    top: 25px;
+    background-color: green;
+    color: black;
+  }
+  #about {
+    top: 85px;
+    background-color: green;
+    color: black;
+  }
+  #portfolio {
+    top: 145px;
+    background-color: green;
+    color: black;
+  }
+  #contact {
+    top: 205px;
+    background-color: green;
+    color: black;
+  }
+  #testimonial {
+    top: 265px;
+    background-color: green;
+    color: black;
+  }
+
+  .sidebar a:hover {
+    left: 0;
+  }
+  .sidebar .icon {
+    display: none;
+  }
+}
+/*card*/
+@media screen and (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin-left: 0px;
+    padding: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    line-height: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-container .card {
+    border: solid 1px white;
+    margin: 10px;
+    background-color: darkseagreen;
+  }
+
+  .card-container .card .card-body {
+    padding: 10px;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .card-container .card img.card-img {
+    height: 200px;
+    width: 300px;
+    object-position: center;
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  button:hover {
+    opacity: 0.7;
+    color: #ffffff;
+  }
+  button .card .card-body {
+    position: relative;
+    width: 300px;
+    max-width: 400px;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-content: center;
+    padding: 10px;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  .port {
+    color: whitesmoke;
+    font-family: "Raleway";
+    font-size: 50px;
+    line-height: 14.6667px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+  }
+}
+/*media query*/
+@media (min-width: 200px) and (max-width: 480px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: -25px;
+    padding: 50px;
+    align-content: center;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    line-height: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-container .card {
+    border: solid 1px #f2f2f2;
+    margin: 5px;
+    background-color: darkseagreen;
+  }
+
+  .card-container .card .card-body {
+    padding: 5px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  .card-container .card img.card-img {
+    height: 200px;
+    width: 290px;
+    object-position: center;
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  button .card .card-body {
+    position: relative;
+    width: 300px;
+    max-width: 400px;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-content: center;
+    padding: 10px;
+  }
+
+  .port {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-left: 200px;
+    padding: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    line-height: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-container .card {
+    border: solid 1px #f2f2f2;
+    margin: 5px;
+    background-color: darkseagreen;
+  }
+
+  .card-container .card .card-body {
+    padding: 5px;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .card-container .card img.card-img {
+    height: 200px;
+    width: 290px;
+    object-position: center;
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  button .card .card-body {
+    position: relative;
+    width: 300px;
+    max-width: 400px;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-content: center;
+    padding: 10px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    color: black;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+}
+
+/* modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* The Modal (background) */
+
+#myBtn2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+#vbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+#cbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  color: black;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  background-color: seagreen;
+  color: white;
+}

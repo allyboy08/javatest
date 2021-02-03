@@ -1,0 +1,384 @@
+/* navagation*/
+@media (min-width: 200px) and (max-width: 480px) {
+  .sidebar {
+    overflow: hidden;
+    background-color: darkseagreen;
+  }
+
+  .sidebar a {
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  .sidebar a.icon {
+    float: left;
+    display: block;
+    color: black;
+  }
+  .sidebar.responsive {
+    position: relative;
+  }
+  .sidebar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .sidebar {
+    overflow: hidden;
+    background-color: darkseagreen;
+  }
+
+  .sidebar a {
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .sidebar a {
+    display: none;
+  }
+  .sidebar a.icon {
+    float: left;
+    display: block;
+    color: black;
+  }
+  .sidebar.responsive {
+    position: relative;
+  }
+  .sidebar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    overflow: hidden;
+    color: black;
+  }
+  .sidebar a {
+    position: fixed;
+    left: -100px;
+    transition: 0.1s;
+    font-size: 20px;
+    float: left;
+    width: 110px;
+    color: whitesmoke;
+
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 0 5px 5px;
+  }
+
+  #home {
+    top: 25px;
+    background-color: green;
+    color: black;
+  }
+  #about {
+    top: 85px;
+    background-color: green;
+    color: black;
+  }
+  #portfolio {
+    top: 145px;
+    background-color: green;
+    color: black;
+  }
+  #contact {
+    top: 205px;
+    background-color: green;
+    color: black;
+  }
+  #testimonial {
+    top: 265px;
+    background-color: green;
+    color: black;
+  }
+
+  .sidebar a:hover {
+    left: 0;
+  }
+  .sidebar .icon {
+    display: none;
+  }
+}
+/*social*/
+
+/*contact*/
+
+body {
+  background: black;
+}
+.container {
+  max-width: 1170px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 25px;
+}
+
+.brand {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* COMPANY INFORMATION */
+
+.company-info {
+  background: lightgreen;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.company-info ul li i {
+  color: black;
+}
+
+.company-info ul li:nth-child(1) .fa:hover {
+  color: green;
+}
+.company-info ul li:nth-child(2) .fa:hover {
+  color: green;
+}
+.company-info ul li:nth-child(3) .fa:hover {
+  color: green;
+}
+
+/* CONTACT */
+
+.contact {
+  background: darkseagreen;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* FORM */
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  /* box-sizing: border-box; */
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+  width: 100%;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627edc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627edc;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr fr;
+    box-sizing: border-box;
+  }
+  .container {
+    box-sizing: border-box;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    /* border-radius: 4px 0 0 4px; */
+    border-radius: 4px;
+  }
+
+  .contact {
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627edc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .company-info ul li:nth-child(1) .fa:hover {
+    color: green;
+  }
+  .company-info ul li:nth-child(2) .fa:hover {
+    color: green;
+  }
+  .company-info ul li:nth-child(3) .fa:hover {
+    color: green;
+  }
+}
+@media (min-width: 200px) and (max-width: 480px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr fr;
+    margin-left: -20px;
+    margin-right: 90px;
+    box-sizing: border-box;
+  }
+  .container {
+    box-sizing: border-box;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .contact {
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: center;
+  }
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627edc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    /* box-sizing: border-box; */
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr fr;
+    box-sizing: border-box;
+  }
+  .container {
+    box-sizing: border-box;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px;
+  }
+
+  .contact {
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: center;
+  }
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627edc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}

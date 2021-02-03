@@ -1,0 +1,375 @@
+.landing {
+  background-color: black;
+}
+/* body {
+  background-color: dimgray;
+} */
+
+/*navagation*/
+
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+}
+@media (min-width: 200px) and (max-width: 480px) {
+  .sidebar {
+    overflow: hidden;
+    background-color: darkseagreen;
+  }
+
+  .sidebar a {
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  .sidebar a.icon {
+    float: left;
+    display: block;
+    color: black;
+  }
+  .sidebar.responsive {
+    position: relative;
+  }
+  .sidebar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .sidebar {
+    overflow: hidden;
+    background-color: darkseagreen;
+  }
+
+  .sidebar a {
+    float: right;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .sidebar a {
+    display: none;
+  }
+  .sidebar a.icon {
+    float: left;
+    display: block;
+    color: black;
+  }
+  .sidebar.responsive {
+    position: relative;
+  }
+  .sidebar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sidebar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    overflow: hidden;
+    color: black;
+  }
+  .sidebar a {
+    position: fixed;
+    left: -100px;
+    transition: 0.1s;
+    font-size: 20px;
+    float: left;
+    width: 110px;
+
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 0 5px 5px;
+  }
+
+  #home {
+    top: 25px;
+    background-color: green;
+    color: green;
+  }
+  #about {
+    top: 85px;
+    background-color: green;
+    color: green;
+  }
+  #portfolio {
+    top: 145px;
+    background-color: green;
+    color: green;
+  }
+  #contact {
+    top: 205px;
+    background-color: green;
+    color: green;
+  }
+  #testimonial {
+    top: 265px;
+
+    background-color: green;
+    color: green;
+  }
+
+  .sidebar a:hover {
+    left: 0;
+  }
+  .sidebar .icon {
+    display: none;
+  }
+  #home:hover {
+    color: black;
+  }
+  #about:hover {
+    color: black;
+  }
+  #portfolio:hover {
+    color: black;
+  }
+  #contact:hover {
+    color: black;
+  }
+  #testimonial:hover {
+    color: black;
+  }
+}
+/*about page*/
+
+/* social media */
+
+/*contact*/
+
+/*footer*/
+footer {
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  right: 0;
+  padding: 0;
+}
+
+/*profile picture*/
+@media screen and (max-width: 600px) {
+  .ok {
+    display: none;
+  }
+  img {
+    border: 5px solid #555;
+    width: 130px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40%;
+  }
+
+  .profilepic {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .content {
+    position: relative;
+    padding: 40px 60px;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 900;
+  }
+}
+@media screen and (min-width: 1024px) {
+  img {
+    border: 5px solid #555;
+    width: 130px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40%;
+  }
+  /* .info {
+    text-align: inherit;
+  } */
+
+  .profilepic {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* min-height: 100px; */
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .frames {
+    position: relative;
+    margin: 0 10px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frames span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+  }
+
+  .propic:hover span:nth-child(1) {
+    border: none;
+    background: #dddc42;
+  }
+
+  .frames span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+  }
+
+  .propic:hover span:nth-child(2) {
+    border: none;
+    background: #008337;
+  }
+
+  .frames span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+  }
+
+  .propic:hover span:nth-child(3) {
+    border: none;
+    background: #479638;
+  }
+
+  .content {
+    position: relative;
+    padding: 40px 60px;
+    color: black;
+    /* text-align: center; */
+    transition: 0.5s;
+    z-index: 900;
+    float: right;
+  }
+
+  .content a {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+  }
+  .content:hover {
+    color: white;
+  }
+  .content a:hover {
+    background: black;
+    color: white;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .ok {
+    display: none;
+  }
+  img {
+    border: 5px solid #555;
+    width: 130px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40%;
+  }
+
+  .profilepic {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .content {
+    position: relative;
+    padding: 40px 60px;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 900;
+  }
+}
